@@ -1,0 +1,149 @@
+:root{
+    --color-Prime1-PaleBlue: hsl(225, 100%, 94%);
+    --color-Prime2-BrightBlue: hsl(245, 75%, 52%);
+    
+    --color-Netural-VeryPaleBlue: hsl(225, 100%, 98%);
+    --color-Netural-DesaturedBlue: hsl(224, 23%, 55%);
+    --color-Netural-DarkBlue: hsl(223, 47%, 23%);
+    
+    --fontWeight-Reg: 500;
+    --fontWeight-LitBold: 700;
+    --fontWeight-Blod: 900;
+    --fontSize-Paragraph: 16px;
+
+    --mobileSize: 375px;
+    --desktopSize: 1440px;
+    
+    --myFontFamily: 'Red Hat Display', sans-serif;
+
+
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+body{
+  font-family: var(--myFontFamily);
+  color:var(--color-Netural-DesaturedBlue);
+  font-weight: var(--fontWeight-Reg);
+  font-size: var(--fontSize-Paragraph);
+  background: var(--color-Prime1-PaleBlue) url(./images/pattern-background-desktop.svg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+.imgDiv{
+  width: 450px;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+}
+.btn-cancel{
+  text-decoration: none;
+  color:  #717FA6;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+.container{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4rem;
+}
+.product{
+  font-size: var(--fontSize-Paragraph);
+  font-family: var(--myFontFamily);
+  font-weight: var(--fontWeight-Reg);
+  background-color: white;  
+  
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  max-width: 450px;
+  min-height: 697px;
+  justify-items: center;
+} 
+.text{
+  display: grid;
+  justify-items: center;
+
+}
+.btnProceedPay{
+  font-weight: var(--fontWeight-Blod);
+  color: white;
+  width: 354px;
+  height: 50px;
+  background-color: var(--color-Prime2-BrightBlue) ;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+}
+.selected{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:var(--color-Netural-VeryPaleBlue);
+  border-radius: 11px;
+  width: 354px;
+    height: 98px;
+flex-shrink: 0;
+
+}
+.ordTitle{
+  font-weight: var(--fontWeight-Blod);
+  color: var(--color-Netural-DarkBlue);
+}
+.description{
+
+}
+.container{
+  width: 100%;
+  display: grid;
+
+  padding: 48px;
+}
